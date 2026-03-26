@@ -1,0 +1,6 @@
+{
+    "subject": "Greetings from Jinja Email",
+    "greeting": "Hello chell!",
+    "message": "This is a sample email generated using Jinja2.",
+    "sender_name": "GFG"
+}
