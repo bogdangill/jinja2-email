@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Read the Jinja2 email template
-with open("template.html", "r") as file:
+with open("templates/template.html", "r") as file:
     template_str = file.read()
 
 jinja_template = Template(template_str)
