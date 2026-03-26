@@ -2,6 +2,7 @@
 from jinja2 import Template
 
 import os
+import json
 
 # We will need smtplib to connect to our smtp email server
 import smtplib
@@ -15,6 +16,9 @@ load_dotenv()
 # Read the Jinja2 email template
 with open("templates/template.html", "r") as file:
     template_str = file.read()
+
+with open('texts.json', 'r', encoding='utf-8') as f:
+    all_texts = json.load(f)
 
 jinja_template = Template(template_str)
 
@@ -45,20 +49,13 @@ people_data = [
 
 # Now we iterate over our data to generate and send custom emails to each
 for person in people_data:
-    # Create email content using Jinja2 template
-    email_data = {
-        "subject": "Greetings from Jinja Email",
-        "greeting": f"Hello {person['name']}!",
-        "message": "This is a sample email generated using Jinja2.",
-        "sender_name": "GFG",
-    }
-    email_content = jinja_template.render(email_data)
+    email_content = jinja_template.render(all_texts)
 
     # Create the email message
     msg = MIMEMultipart()
     msg["From"] = EMAIL_ADDRESS
     msg["To"] = person["email"]
-    msg["Subject"] = email_data["subject"]
+    msg["Subject"] = all_texts["subject"]
 
     # Attach the HTML content to the email
     msg.attach(MIMEText(email_content, "html"))
