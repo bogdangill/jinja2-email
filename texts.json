@@ -1,4 +1,13 @@
 {
+    "preheader": "Это дополнительная информация, которая предваряет само письмо и может содержать дополнительные данные, такие как пункты меню, ссылки на веб-версию письма и прочее. Для корректного отображения прехедера важно правильно настроить стили и скрыть ненужный текст.",
+    "title": "Как стать тестовым письмом",
+    "step_1": "Сделай шаг 1",
+    "step_2": "Сделай шаг 2",
+    "step_3": "Сделай шаг 3",
+    "footer_download_app": "Скачайте мобильное приложение",
+    "company_name": "Компания",
+    "footer_send_automatically": "Письмо отправлено вам автоматически. Пожалуйста, не отвечайте на него. Если у вас есть вопросы, <a href='https://github.com/bogdangill' target='_blank' rel='nofollow noopener' style='text-decoration: none; color: #46b2ac;'>напишите нам</a>. Всегда рады вам помочь!",
+    "footer_unsubscribe": "Чтобы отписаться от этой рассылки, перейдите по <a href='https://github.com/bogdangill' target='_blank' rel='nofollow noopener' style='text-decoration: none; color: #46b2ac;'>ссылке</a>",
     "subject": "Greetings from Jinja Email",
     "greeting": "Hello chell!",
     "message": "This is a sample email generated using Jinja2.",
