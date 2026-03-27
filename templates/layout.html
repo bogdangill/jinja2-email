@@ -198,186 +198,24 @@
                         <tr>
                             <td align="center" valign="top">
                                 <!-- header -->
-                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
-                                    <tr>
-                                        <td style="padding: 14px 32px;">
-                                            <table style="font-family: 'Roboto', sans-serif;" role="presentation">
-                                                <tr>
-                                                    <td valign="middle" height="36" width="100%">
-                                                        <a href="index2.html" target="_blank" rel="nofollow noopener"
-                                                            style="color: #333333;">
-                                                            <img src="https://iili.io/qPQwumx.png" alt="Pomogatel logo" width="36" border="0" style="vertical-align: middle; display: inline-block; margin: 0;" />
-                                                            <b style="vertical-align: middle; font-size: 20px; line-height: 1.6; font-weight: 500;"> {{ company_name }}</b>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
+                                {% block header %}
+                                {% endblock %}
                                 <!-- header : END -->
-                                <!-- spacer -->
-                                <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
-                                    <tr>
-                                        <td height="24" width="100%"></td>
-                                    </tr>
-                                </table>
-                                <!-- spacer : END  -->
                                 <!-- main -->
-                                <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
-                                    <tr class="bbs-steps">
-                                        <td class="bbs-steps__wrapper" align="center" style="padding: 0 32px" colspan="2">
-                                            <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-family: 'Roboto', sans-serif;" role="presentation">
-                                                <tr>
-                                                    <td bgcolor="#fff4ea" style="padding: 24px; border-radius: 24px;" valign="top" width="100%" align="center">
-                                                        <h2 class="mail-title" style="margin-top: 0; margin-bottom: 16px;">
-                                                            {{ title }}
-                                                        </h2>
-                                                        <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-family: 'Roboto', sans-serif;" role="presentation">
-                                                            <tr align="center">
-                                                                <td style="padding-right: 8px; font-size: 0;">
-                                                                    <table cellspacing="0" cellpadding="4" border="0" role="presentation">
-                                                                        <tr class="bbs-steps__step">
-                                                                            <td width="28" valign="middle" style="width: 28px;">
-                                                                                <img src="https://iili.io/qi2SOba.png" alt="1" width="28" height="28" border="0" style="vertical-align: middle; display: inline-block; margin: 0;" />
-                                                                            </td>
-                                                                            <td valign="middle">
-                                                                                <p class="mail-text" style="margin: 0;">
-                                                                                    {{ step_1 }}
-                                                                                </p>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="bbs-steps__step">
-                                                                            <td width="28" valign="middle" style="width: 28px;">
-                                                                                <img src="https://iili.io/qi2Sw5F.png" alt="2" width="28" height="28" border="0" style="vertical-align: middle; display: inline-block; margin: 0;" />
-                                                                            </td>
-                                                                            <td valign="middle">
-                                                                                <p class="mail-text" style="margin: 0;">
-                                                                                    {{ step_2 }}
-                                                                                </p>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="bbs-steps__step">
-                                                                            <td width="28" valign="middle" style="width: 28px;">
-                                                                                <img src="https://iili.io/qi2SNOg.png" alt="3" width="28" height="28" border="0" style="vertical-align: middle; display: inline-block; margin: 0;" />
-                                                                            </td>
-                                                                            <td valign="middle">
-                                                                                <p class="mail-text" style="margin: 0;">
-                                                                                    {{ step_3 }}
-                                                                                </p>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                        <!-- spacer -->
-                                                        <table cellpadding="0" cellspacing="0" role="presentation" border="0" width="100%">
-                                                            <tr>
-                                                                <td height="20" width="100%"></td>
-                                                            </tr>
-                                                        </table>
-                                                        <!-- spacer : END -->
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                                                            <tr>
-                                                                <td align="center" valign="middle">
-                                                                    <a href="/"
-                                                                    style="text-decoration: none; display: inline-block;"
-                                                                    target="_blank" rel="nofollow noopener">
-                                                                        <img src="https://iili.io/qiRigVt.png" width="186" height="44" alt="" style="font-family: sans-serif; font-weight: 400; font-size: 18px; line-height: 23px; vertical-align: top; border: 0; height: auto;" />
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <!-- spacer -->
-                                    <table cellpadding="0" cellspacing="0" role="presentation" border="0" width="100%">
-                                        <tr>
-                                            <td height="56" width="100%"></td>
-                                        </tr>
-                                    </table>
-                                    <!-- spacer : END -->
-                                </table>
+                                {% block main %}
+                                {% endblock %}
                                 <!-- footer -->
-                                <table cellpadding="0" cellspacing="0" role="presentation" border="0" width="100%">
-                                    <tr>
-                                        <td width="100%" style="background: #edfaf9; padding: 12px 0;">
-                                            <table cellpadding="0" cellspacing="0" role="presentation" border="0" width="100%">
-                                                <tr align="center">
-                                                    <td style="padding: 0 16px;">
-                                                            <!--[if mso]>
-                                                            <table cellspacing="0" cellpadding="0" border="0"><tr><td width="214" valign="middle" style="width: 214px;">
-                                                            <![endif]-->
-                                                        <div class="stack-column"
-                                                            style="display: inline-block; vertical-align: middle; width: 100%; max-width: 236px;">
-                                                            <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
-                                                                <tr>
-                                                                    <td align="center" valign="middle" style="font-family: 'Roboto', sans-serif; padding: 12px 22px;">
-                                                                        <b>
-                                                                            {{ footer_download_app }} <a href="/" target="_blank" rel="nofollow noopener" style="text-decoration: none; color: #46b2ac;">{{ company_name }}</a>
-                                                                        </b>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>
-                                                        <!--[if mso]></td><td width="252" valign="middle" style="width: 284px;"><![endif]-->
-                                                        <div class="stack-column"
-                                                            style="display: inline-block; vertical-align: middle; width: 100%; max-width: 284px;">
-                                                            <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
-                                                                <tr>
-                                                                    <td valign="middle" style="padding: 12px 22px;">
-                                                                        <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
-                                                                            <tr>
-                                                                                <td align="center" valign="middle" style="padding-right: 16px;">
-                                                                                    <a href="https://github.com/bogdangill"
-                                                                                    style="text-decoration: none;"
-                                                                                    target="_blank" rel="nofollow noopener">
-                                                                                        <img src="https://iili.io/qic7bn9.png" width="106" height="36" alt="Доступно в Google Play" style="font-family: sans-serif; font-weight: 400; font-size: 18px; line-height: 23px; vertical-align: top; border: 0; height: auto;" />
-                                                                                    </a>
-                                                                                </td>
-                                                                                <td align="center" valign="middle">
-                                                                                    <a href="https://github.com/bogdangill"
-                                                                                    style="text-decoration: none;"
-                                                                                    target="_blank" rel="nofollow noopener">
-                                                                                        <img src="https://iili.io/qicVTHF.png" width="106" height="36" alt="Доступно в App Store" style="font-family: sans-serif; font-weight: 400; font-size: 18px; line-height: 23px; vertical-align: top; border: 0; height: auto;" />
-                                                                                    </a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr align="center">
-                                        <td width="100%" style="font-family: 'Roboto', sans-serif; background: #f8f8f8; padding: 24px 32px;">
-                                            <p class="mail-text-footer" style="margin-bottom: 32px; margin-top: 0;">
-                                                {{ footer_send_automatically|safe }} 
-                                            </p>
-                                            <p class="mail-text-footer" style="margin: 0;">
-                                                {{ footer_unsubscribe|safe }}
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </table>
+                                {% block footer %}
+                                {% endblock %}
                             </td>
                         </tr>
                     </table>
-                    <!-- Email Body : BEGIN -->
+                    <!-- Email Body : END -->
 
                 <!--[if mso]>
                     </td></tr></table>
                 <![endif]-->
                 </div>
-
             </td>
         </tr>
     </table>

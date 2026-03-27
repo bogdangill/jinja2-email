@@ -11,7 +11,7 @@ with open('texts.json', 'r', encoding='utf-8') as f:
 @app.route('/')
 def home():
     # Sending data into template
-    return render_template('layout.html', **all_texts)
+    return render_template('index.html', **all_texts)
 
 if __name__ == '__main__':
     # create livereload server
